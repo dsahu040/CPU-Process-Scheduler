@@ -1,0 +1,162 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 985 Time Remaining:  5 (Last Run Time:  1) Name: emacs
++------------
+| In Scheduler:  1 Processes
+|       PID: 985 Time Remaining:  5 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 985 Time Remaining:  5 (Last Run Time:  1) Name: emacs
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
+| Process Starting
+|       PID: 285 Time Remaining:  3 (Last Run Time:  2) Name: nano
++------------
+| In Scheduler:  2 Processes
+|       PID: 285 Time Remaining:  3 (Last Run Time:  2) Name: nano
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 285 Time Remaining:  3 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 285 Time Remaining:  2 (Last Run Time:  2) Name: nano
+| Process Starting
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
++------------
+| In Scheduler:  3 Processes
+|       PID: 285 Time Remaining:  2 (Last Run Time:  2) Name: nano
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 285 Time Remaining:  2 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 285 Time Remaining:  1 (Last Run Time:  3) Name: nano
+| Process Starting
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
++------------
+| In Scheduler:  4 Processes
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 285 Time Remaining:  1 (Last Run Time:  3) Name: nano
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 285 Time Remaining:  1 (Last Run Time:  3) Name: nano
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 285 Time Remaining:  0 (Last Run Time:  4) Name: nano
+| Process Starting
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
++------------
+| In Scheduler:  4 Processes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+| Process Starting
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
++------------
+| In Scheduler:  5 Processes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
+| Process Starting
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
++------------
+| In Scheduler:  6 Processes
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 270 Time Remaining:  1 (Last Run Time:  7) Name: more
+| Process Starting
+|       PID: 575 Time Remaining:  0 (Last Run Time:  8) Name: dd
++------------
+| In Scheduler:  7 Processes
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  1 (Last Run Time:  7) Name: more
+|       PID: 575 Time Remaining:  0 (Last Run Time:  8) Name: dd
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 575 Time Remaining:  0 (Last Run Time:  8) Name: dd
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 575 Time Remaining: -1 (Last Run Time:  8) Name: dd
+| Process Starting
+|       PID: 919 Time Remaining:  1 (Last Run Time:  9) Name: echo
++------------
+| In Scheduler:  7 Processes
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  1 (Last Run Time:  7) Name: more
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 919 Time Remaining:  1 (Last Run Time:  9) Name: echo
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+\=============

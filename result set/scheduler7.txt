@@ -1,0 +1,148 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 299 Time Remaining:  1 (Last Run Time:  1) Name: man
++------------
+| In Scheduler:  1 Processes
+|       PID: 299 Time Remaining:  1 (Last Run Time:  1) Name: man
++------------
+| Selecting to Run on the CPU
+|       PID: 299 Time Remaining:  1 (Last Run Time:  1) Name: man
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Terminating Process
+|       PID: 299 Time Remaining:  0 (Last Run Time:  1) Name: man
+| Process Starting
+|       PID: 443 Time Remaining:  7 (Last Run Time:  2) Name: nano
++------------
+| In Scheduler:  1 Processes
+|       PID: 443 Time Remaining:  7 (Last Run Time:  2) Name: nano
++------------
+| Selecting to Run on the CPU
+|       PID: 443 Time Remaining:  7 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+| Process Starting
+|       PID: 153 Time Remaining:  1 (Last Run Time:  3) Name: more
++------------
+| In Scheduler:  2 Processes
+|       PID: 153 Time Remaining:  1 (Last Run Time:  3) Name: more
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
++------------
+| Selecting to Run on the CPU
+|       PID: 153 Time Remaining:  1 (Last Run Time:  3) Name: more
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Terminating Process
+|       PID: 153 Time Remaining:  0 (Last Run Time:  3) Name: more
+| Process Starting
+|       PID: 526 Time Remaining:  0 (Last Run Time:  4) Name: more
++------------
+| In Scheduler:  2 Processes
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+|       PID: 526 Time Remaining:  0 (Last Run Time:  4) Name: more
++------------
+| Selecting to Run on the CPU
+|       PID: 526 Time Remaining:  0 (Last Run Time:  4) Name: more
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 526 Time Remaining: -1 (Last Run Time:  4) Name: more
+| Process Starting
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
++------------
+| In Scheduler:  2 Processes
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+| Process Starting
+|       PID: 963 Time Remaining:  4 (Last Run Time:  6) Name: touch
++------------
+| In Scheduler:  3 Processes
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 963 Time Remaining:  4 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 963 Time Remaining:  4 (Last Run Time:  6) Name: touch
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
+| Process Starting
+|       PID: 884 Time Remaining:  2 (Last Run Time:  7) Name: nano
++------------
+| In Scheduler:  4 Processes
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 884 Time Remaining:  2 (Last Run Time:  7) Name: nano
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 884 Time Remaining:  2 (Last Run Time:  7) Name: nano
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 884 Time Remaining:  1 (Last Run Time:  7) Name: nano
+| Process Starting
+|       PID: 230 Time Remaining:  4 (Last Run Time:  8) Name: touch
++------------
+| In Scheduler:  5 Processes
+|       PID: 230 Time Remaining:  4 (Last Run Time:  8) Name: touch
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 884 Time Remaining:  1 (Last Run Time:  7) Name: nano
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 884 Time Remaining:  1 (Last Run Time:  7) Name: nano
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 884 Time Remaining:  0 (Last Run Time:  8) Name: nano
+| Process Starting
+|       PID: 112 Time Remaining:  5 (Last Run Time:  9) Name: wc
++------------
+| In Scheduler:  5 Processes
+|       PID: 112 Time Remaining:  5 (Last Run Time:  9) Name: wc
+|       PID: 230 Time Remaining:  4 (Last Run Time:  8) Name: touch
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
+\=============

@@ -1,0 +1,154 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 985 Time Remaining:  0 (Last Run Time:  1) Name: sort
++------------
+| In Scheduler:  1 Processes
+|       PID: 985 Time Remaining:  0 (Last Run Time:  1) Name: sort
++------------
+| Selecting to Run on the CPU
+|       PID: 985 Time Remaining:  0 (Last Run Time:  1) Name: sort
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Terminating Process
+|       PID: 985 Time Remaining: -1 (Last Run Time:  1) Name: sort
+| Process Starting
+|       PID: 940 Time Remaining:  6 (Last Run Time:  2) Name: grep
++------------
+| In Scheduler:  1 Processes
+|       PID: 940 Time Remaining:  6 (Last Run Time:  2) Name: grep
++------------
+| Selecting to Run on the CPU
+|       PID: 940 Time Remaining:  6 (Last Run Time:  2) Name: grep
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+| Process Starting
+|       PID: 264 Time Remaining:  4 (Last Run Time:  3) Name: cat
++------------
+| In Scheduler:  2 Processes
+|       PID: 264 Time Remaining:  4 (Last Run Time:  3) Name: cat
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  4 (Last Run Time:  3) Name: cat
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+| Process Starting
+|       PID: 739 Time Remaining:  1 (Last Run Time:  4) Name: cp
++------------
+| In Scheduler:  3 Processes
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+|       PID: 739 Time Remaining:  1 (Last Run Time:  4) Name: cp
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
++------------
+| Selecting to Run on the CPU
+|       PID: 739 Time Remaining:  1 (Last Run Time:  4) Name: cp
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 739 Time Remaining:  0 (Last Run Time:  4) Name: cp
+| Process Starting
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| In Scheduler:  3 Processes
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 264 Time Remaining:  2 (Last Run Time:  5) Name: cat
+| Process Starting
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
++------------
+| In Scheduler:  4 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 264 Time Remaining:  2 (Last Run Time:  5) Name: cat
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  2 (Last Run Time:  5) Name: cat
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+| Process Starting
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
++------------
+| In Scheduler:  5 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 940 Time Remaining:  4 (Last Run Time:  7) Name: grep
+| Process Starting
+|       PID: 798 Time Remaining:  4 (Last Run Time:  8) Name: mkdir
++------------
+| In Scheduler:  6 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
+|       PID: 798 Time Remaining:  4 (Last Run Time:  8) Name: mkdir
+|       PID: 940 Time Remaining:  4 (Last Run Time:  7) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 264 Time Remaining:  0 (Last Run Time:  8) Name: cat
+| Process Starting
+|       PID: 974 Time Remaining:  1 (Last Run Time:  9) Name: wc
++------------
+| In Scheduler:  6 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
+|       PID: 798 Time Remaining:  4 (Last Run Time:  8) Name: mkdir
+|       PID: 940 Time Remaining:  4 (Last Run Time:  7) Name: grep
+|       PID: 974 Time Remaining:  1 (Last Run Time:  9) Name: wc
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 974 Time Remaining:  1 (Last Run Time:  9) Name: wc
+\=============

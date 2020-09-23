@@ -1,0 +1,154 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 744 Time Remaining:  9 (Last Run Time:  1) Name: uniq
++------------
+| In Scheduler:  1 Processes
+|       PID: 744 Time Remaining:  9 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 744 Time Remaining:  9 (Last Run Time:  1) Name: uniq
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
+| Process Starting
+|       PID:  93 Time Remaining:  1 (Last Run Time:  2) Name: rm
++------------
+| In Scheduler:  2 Processes
+|       PID:  93 Time Remaining:  1 (Last Run Time:  2) Name: rm
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  93 Time Remaining:  1 (Last Run Time:  2) Name: rm
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Terminating Process
+|       PID:  93 Time Remaining:  0 (Last Run Time:  2) Name: rm
+| Process Starting
+|       PID: 313 Time Remaining:  1 (Last Run Time:  3) Name: grep
++------------
+| In Scheduler:  2 Processes
+|       PID: 313 Time Remaining:  1 (Last Run Time:  3) Name: grep
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 313 Time Remaining:  1 (Last Run Time:  3) Name: grep
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Terminating Process
+|       PID: 313 Time Remaining:  0 (Last Run Time:  3) Name: grep
+| Process Starting
+|       PID:  47 Time Remaining:  4 (Last Run Time:  4) Name: dd
++------------
+| In Scheduler:  2 Processes
+|       PID:  47 Time Remaining:  4 (Last Run Time:  4) Name: dd
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  47 Time Remaining:  4 (Last Run Time:  4) Name: dd
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Unloading Process
+|       PID:  47 Time Remaining:  3 (Last Run Time:  4) Name: dd
+| Process Starting
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
++------------
+| In Scheduler:  3 Processes
+|       PID:  47 Time Remaining:  3 (Last Run Time:  4) Name: dd
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  47 Time Remaining:  3 (Last Run Time:  4) Name: dd
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+| Process Starting
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
++------------
+| In Scheduler:  4 Processes
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
+| Process Starting
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
++------------
+| In Scheduler:  5 Processes
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID:  38 Time Remaining:  1 (Last Run Time:  7) Name: grep
+| Process Starting
+|       PID: 883 Time Remaining:  2 (Last Run Time:  8) Name: ls
++------------
+| In Scheduler:  6 Processes
+|       PID:  38 Time Remaining:  1 (Last Run Time:  7) Name: grep
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
+|       PID: 883 Time Remaining:  2 (Last Run Time:  8) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID:  38 Time Remaining:  1 (Last Run Time:  7) Name: grep
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID:  38 Time Remaining:  0 (Last Run Time:  8) Name: grep
+| Process Starting
+|       PID: 947 Time Remaining:  3 (Last Run Time:  9) Name: cd
++------------
+| In Scheduler:  6 Processes
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
+|       PID: 883 Time Remaining:  2 (Last Run Time:  8) Name: ls
+|       PID: 947 Time Remaining:  3 (Last Run Time:  9) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+\=============

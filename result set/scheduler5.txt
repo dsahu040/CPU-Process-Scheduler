@@ -1,0 +1,156 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 765 Time Remaining:  2 (Last Run Time:  1) Name: cksum
++------------
+| In Scheduler:  1 Processes
+|       PID: 765 Time Remaining:  2 (Last Run Time:  1) Name: cksum
++------------
+| Selecting to Run on the CPU
+|       PID: 765 Time Remaining:  2 (Last Run Time:  1) Name: cksum
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 765 Time Remaining:  1 (Last Run Time:  1) Name: cksum
+| Process Starting
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| In Scheduler:  2 Processes
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
+|       PID: 765 Time Remaining:  1 (Last Run Time:  1) Name: cksum
++------------
+| Selecting to Run on the CPU
+|       PID: 765 Time Remaining:  1 (Last Run Time:  1) Name: cksum
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Terminating Process
+|       PID: 765 Time Remaining:  0 (Last Run Time:  2) Name: cksum
+| Process Starting
+|       PID: 381 Time Remaining:  8 (Last Run Time:  3) Name: cd
++------------
+| In Scheduler:  2 Processes
+|       PID: 381 Time Remaining:  8 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 381 Time Remaining:  8 (Last Run Time:  3) Name: cd
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+| Process Starting
+|       PID: 198 Time Remaining:  0 (Last Run Time:  4) Name: cksum
++------------
+| In Scheduler:  3 Processes
+|       PID: 198 Time Remaining:  0 (Last Run Time:  4) Name: cksum
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 198 Time Remaining:  0 (Last Run Time:  4) Name: cksum
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 198 Time Remaining: -1 (Last Run Time:  4) Name: cksum
+| Process Starting
+|       PID: 226 Time Remaining:  6 (Last Run Time:  5) Name: ls
++------------
+| In Scheduler:  3 Processes
+|       PID: 226 Time Remaining:  6 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 226 Time Remaining:  6 (Last Run Time:  5) Name: ls
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+| Process Starting
+|       PID:   5 Time Remaining:  3 (Last Run Time:  6) Name: mkdir
++------------
+| In Scheduler:  4 Processes
+|       PID:   5 Time Remaining:  3 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID:   5 Time Remaining:  3 (Last Run Time:  6) Name: mkdir
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+| Process Starting
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
++------------
+| In Scheduler:  5 Processes
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 632 Time Remaining:  8 (Last Run Time:  7) Name: yes
+| Process Starting
+|       PID: 967 Time Remaining:  7 (Last Run Time:  8) Name: tee
++------------
+| In Scheduler:  6 Processes
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
+|       PID: 632 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID: 967 Time Remaining:  7 (Last Run Time:  8) Name: tee
++------------
+| Selecting to Run on the CPU
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Unloading Process
+|       PID: 381 Time Remaining:  6 (Last Run Time:  8) Name: cd
+| Process Starting
+|       PID: 308 Time Remaining:  1 (Last Run Time:  9) Name: man
++------------
+| In Scheduler:  7 Processes
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 308 Time Remaining:  1 (Last Run Time:  9) Name: man
+|       PID: 381 Time Remaining:  6 (Last Run Time:  8) Name: cd
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
+|       PID: 632 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID: 967 Time Remaining:  7 (Last Run Time:  8) Name: tee
++------------
+| Selecting to Run on the CPU
+|       PID: 308 Time Remaining:  1 (Last Run Time:  9) Name: man
+\=============

@@ -1,0 +1,162 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID:  83 Time Remaining:  6 (Last Run Time:  1) Name: man
++------------
+| In Scheduler:  1 Processes
+|       PID:  83 Time Remaining:  6 (Last Run Time:  1) Name: man
++------------
+| Selecting to Run on the CPU
+|       PID:  83 Time Remaining:  6 (Last Run Time:  1) Name: man
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+| Process Starting
+|       PID: 537 Time Remaining:  3 (Last Run Time:  2) Name: mv
++------------
+| In Scheduler:  2 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 537 Time Remaining:  3 (Last Run Time:  2) Name: mv
++------------
+| Selecting to Run on the CPU
+|       PID: 537 Time Remaining:  3 (Last Run Time:  2) Name: mv
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 537 Time Remaining:  2 (Last Run Time:  2) Name: mv
+| Process Starting
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
++------------
+| In Scheduler:  3 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+|       PID: 537 Time Remaining:  2 (Last Run Time:  2) Name: mv
++------------
+| Selecting to Run on the CPU
+|       PID: 537 Time Remaining:  2 (Last Run Time:  2) Name: mv
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 537 Time Remaining:  1 (Last Run Time:  3) Name: mv
+| Process Starting
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| In Scheduler:  4 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+|       PID: 537 Time Remaining:  1 (Last Run Time:  3) Name: mv
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 537 Time Remaining:  1 (Last Run Time:  3) Name: mv
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 537 Time Remaining:  0 (Last Run Time:  4) Name: mv
+| Process Starting
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
++------------
+| In Scheduler:  4 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+| Process Starting
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
++------------
+| In Scheduler:  5 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+| Process Starting
+|       PID: 718 Time Remaining:  2 (Last Run Time:  7) Name: grep
++------------
+| In Scheduler:  6 Processes
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 718 Time Remaining:  2 (Last Run Time:  7) Name: grep
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 718 Time Remaining:  2 (Last Run Time:  7) Name: grep
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 718 Time Remaining:  1 (Last Run Time:  7) Name: grep
+| Process Starting
+|       PID: 820 Time Remaining:  3 (Last Run Time:  8) Name: dd
++------------
+| In Scheduler:  7 Processes
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 718 Time Remaining:  1 (Last Run Time:  7) Name: grep
+|       PID: 820 Time Remaining:  3 (Last Run Time:  8) Name: dd
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 718 Time Remaining:  1 (Last Run Time:  7) Name: grep
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 718 Time Remaining:  0 (Last Run Time:  8) Name: grep
+| Process Starting
+|       PID: 256 Time Remaining:  9 (Last Run Time:  9) Name: man
++------------
+| In Scheduler:  7 Processes
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+|       PID: 256 Time Remaining:  9 (Last Run Time:  9) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 820 Time Remaining:  3 (Last Run Time:  8) Name: dd
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
+\=============

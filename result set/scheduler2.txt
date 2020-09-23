@@ -1,0 +1,161 @@
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 719 Time Remaining:  5 (Last Run Time:  1) Name: touch
++------------
+| In Scheduler:  1 Processes
+|       PID: 719 Time Remaining:  5 (Last Run Time:  1) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  5 (Last Run Time:  1) Name: touch
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  4 (Last Run Time:  1) Name: touch
+| Process Starting
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
++------------
+| In Scheduler:  2 Processes
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 719 Time Remaining:  4 (Last Run Time:  1) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  4 (Last Run Time:  1) Name: touch
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  3 (Last Run Time:  2) Name: touch
+| Process Starting
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
++------------
+| In Scheduler:  3 Processes
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  3 (Last Run Time:  2) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  3 (Last Run Time:  2) Name: touch
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  2 (Last Run Time:  3) Name: touch
+| Process Starting
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
++------------
+| In Scheduler:  4 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  2 (Last Run Time:  3) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  2 (Last Run Time:  3) Name: touch
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
+| Process Starting
+|       PID: 773 Time Remaining:  0 (Last Run Time:  5) Name: uniq
++------------
+| In Scheduler:  5 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
+|       PID: 773 Time Remaining:  0 (Last Run Time:  5) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 773 Time Remaining:  0 (Last Run Time:  5) Name: uniq
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Terminating Process
+|       PID: 773 Time Remaining: -1 (Last Run Time:  5) Name: uniq
+| Process Starting
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
++------------
+| In Scheduler:  5 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Terminating Process
+|       PID: 719 Time Remaining:  0 (Last Run Time:  6) Name: touch
+| Process Starting
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
++------------
+| In Scheduler:  5 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 498 Time Remaining:  6 (Last Run Time:  7) Name: less
+| Process Starting
+|       PID:  63 Time Remaining:  6 (Last Run Time:  8) Name: touch
++------------
+| In Scheduler:  6 Processes
+|       PID:  63 Time Remaining:  6 (Last Run Time:  8) Name: touch
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
+|       PID: 498 Time Remaining:  6 (Last Run Time:  7) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Unloading Process
+|       PID: 627 Time Remaining:  8 (Last Run Time:  8) Name: uniq
+| Process Starting
+|       PID: 802 Time Remaining:  6 (Last Run Time:  9) Name: nano
++------------
+| In Scheduler:  7 Processes
+|       PID:  63 Time Remaining:  6 (Last Run Time:  8) Name: touch
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
+|       PID: 498 Time Remaining:  6 (Last Run Time:  7) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  8 (Last Run Time:  8) Name: uniq
+|       PID: 802 Time Remaining:  6 (Last Run Time:  9) Name: nano
++------------
+| Selecting to Run on the CPU
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+\=============

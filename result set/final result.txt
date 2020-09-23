@@ -1,0 +1,1280 @@
+./ scheduler 1:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 886 Time Remaining:  5 (Last Run Time:  1) Name: cp
++------------
+| In Scheduler:  1 Processes
+|       PID: 886 Time Remaining:  5 (Last Run Time:  1) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 886 Time Remaining:  5 (Last Run Time:  1) Name: cp
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 886 Time Remaining:  4 (Last Run Time:  1) Name: cp
+| Process Starting
+|       PID: 335 Time Remaining:  2 (Last Run Time:  2) Name: nano
++------------
+| In Scheduler:  2 Processes
+|       PID: 335 Time Remaining:  2 (Last Run Time:  2) Name: nano
+|       PID: 886 Time Remaining:  4 (Last Run Time:  1) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 335 Time Remaining:  2 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 335 Time Remaining:  1 (Last Run Time:  2) Name: nano
+| Process Starting
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
++------------
+| In Scheduler:  3 Processes
+|       PID: 335 Time Remaining:  1 (Last Run Time:  2) Name: nano
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+|       PID: 886 Time Remaining:  4 (Last Run Time:  1) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 335 Time Remaining:  1 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Terminating Process
+|       PID: 335 Time Remaining:  0 (Last Run Time:  3) Name: nano
+| Process Starting
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
++------------
+| In Scheduler:  3 Processes
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+|       PID: 886 Time Remaining:  4 (Last Run Time:  1) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 886 Time Remaining:  4 (Last Run Time:  1) Name: cp
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Unloading Process
+|       PID: 886 Time Remaining:  3 (Last Run Time:  4) Name: cp
+| Process Starting
+|       PID: 426 Time Remaining:  6 (Last Run Time:  5) Name: grep
++------------
+| In Scheduler:  4 Processes
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+|       PID: 426 Time Remaining:  6 (Last Run Time:  5) Name: grep
+|       PID: 886 Time Remaining:  3 (Last Run Time:  4) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 886 Time Remaining:  3 (Last Run Time:  4) Name: cp
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 886 Time Remaining:  2 (Last Run Time:  5) Name: cp
+| Process Starting
+|       PID: 368 Time Remaining:  9 (Last Run Time:  6) Name: uniq
++------------
+| In Scheduler:  5 Processes
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+|       PID: 368 Time Remaining:  9 (Last Run Time:  6) Name: uniq
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+|       PID: 426 Time Remaining:  6 (Last Run Time:  5) Name: grep
+|       PID: 886 Time Remaining:  2 (Last Run Time:  5) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 886 Time Remaining:  2 (Last Run Time:  5) Name: cp
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 886 Time Remaining:  1 (Last Run Time:  6) Name: cp
+| Process Starting
+|       PID: 530 Time Remaining:  3 (Last Run Time:  7) Name: emacs
++------------
+| In Scheduler:  6 Processes
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+|       PID: 368 Time Remaining:  9 (Last Run Time:  6) Name: uniq
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+|       PID: 426 Time Remaining:  6 (Last Run Time:  5) Name: grep
+|       PID: 530 Time Remaining:  3 (Last Run Time:  7) Name: emacs
+|       PID: 886 Time Remaining:  1 (Last Run Time:  6) Name: cp
++------------
+| Selecting to Run on the CPU
+|       PID: 886 Time Remaining:  1 (Last Run Time:  6) Name: cp
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Terminating Process
+|       PID: 886 Time Remaining:  0 (Last Run Time:  7) Name: cp
+| Process Starting
+|       PID: 135 Time Remaining:  2 (Last Run Time:  8) Name: mkdir
++------------
+| In Scheduler:  6 Processes
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+|       PID: 135 Time Remaining:  2 (Last Run Time:  8) Name: mkdir
+|       PID: 368 Time Remaining:  9 (Last Run Time:  6) Name: uniq
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+|       PID: 426 Time Remaining:  6 (Last Run Time:  5) Name: grep
+|       PID: 530 Time Remaining:  3 (Last Run Time:  7) Name: emacs
+############# starvation : 421 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 421 Time Remaining:  7 (Last Run Time:  3) Name: emacs
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Unloading Process
+|       PID: 421 Time Remaining:  6 (Last Run Time:  8) Name: emacs
+| Process Starting
+|       PID:  58 Time Remaining:  7 (Last Run Time:  9) Name: whoami
++------------
+| In Scheduler:  7 Processes
+|       PID:  58 Time Remaining:  7 (Last Run Time:  9) Name: whoami
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+|       PID: 135 Time Remaining:  2 (Last Run Time:  8) Name: mkdir
+|       PID: 368 Time Remaining:  9 (Last Run Time:  6) Name: uniq
+|       PID: 421 Time Remaining:  6 (Last Run Time:  8) Name: emacs
+|       PID: 426 Time Remaining:  6 (Last Run Time:  5) Name: grep
+|       PID: 530 Time Remaining:  3 (Last Run Time:  7) Name: emacs
+############# starvation : 59 ##############+------------
+| Selecting to Run on the CPU
+|       PID:  59 Time Remaining:  6 (Last Run Time:  4) Name: touch
+\=============
+ 
+./ scheduler 2:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 719 Time Remaining:  5 (Last Run Time:  1) Name: touch
++------------
+| In Scheduler:  1 Processes
+|       PID: 719 Time Remaining:  5 (Last Run Time:  1) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  5 (Last Run Time:  1) Name: touch
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  4 (Last Run Time:  1) Name: touch
+| Process Starting
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
++------------
+| In Scheduler:  2 Processes
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 719 Time Remaining:  4 (Last Run Time:  1) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  4 (Last Run Time:  1) Name: touch
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  3 (Last Run Time:  2) Name: touch
+| Process Starting
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
++------------
+| In Scheduler:  3 Processes
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  3 (Last Run Time:  2) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  3 (Last Run Time:  2) Name: touch
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  2 (Last Run Time:  3) Name: touch
+| Process Starting
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
++------------
+| In Scheduler:  4 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  2 (Last Run Time:  3) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  2 (Last Run Time:  3) Name: touch
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Unloading Process
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
+| Process Starting
+|       PID: 773 Time Remaining:  0 (Last Run Time:  5) Name: uniq
++------------
+| In Scheduler:  5 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
+|       PID: 773 Time Remaining:  0 (Last Run Time:  5) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 773 Time Remaining:  0 (Last Run Time:  5) Name: uniq
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Terminating Process
+|       PID: 773 Time Remaining: -1 (Last Run Time:  5) Name: uniq
+| Process Starting
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
++------------
+| In Scheduler:  5 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 719 Time Remaining:  1 (Last Run Time:  4) Name: touch
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Terminating Process
+|       PID: 719 Time Remaining:  0 (Last Run Time:  6) Name: touch
+| Process Starting
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
++------------
+| In Scheduler:  5 Processes
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+############# starvation : 498 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 498 Time Remaining:  7 (Last Run Time:  2) Name: less
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 498 Time Remaining:  6 (Last Run Time:  7) Name: less
+| Process Starting
+|       PID:  63 Time Remaining:  6 (Last Run Time:  8) Name: touch
++------------
+| In Scheduler:  6 Processes
+|       PID:  63 Time Remaining:  6 (Last Run Time:  8) Name: touch
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
+|       PID: 498 Time Remaining:  6 (Last Run Time:  7) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+############# starvation : 627 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 627 Time Remaining:  9 (Last Run Time:  3) Name: uniq
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Unloading Process
+|       PID: 627 Time Remaining:  8 (Last Run Time:  8) Name: uniq
+| Process Starting
+|       PID: 802 Time Remaining:  6 (Last Run Time:  9) Name: nano
++------------
+| In Scheduler:  7 Processes
+|       PID:  63 Time Remaining:  6 (Last Run Time:  8) Name: touch
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+|       PID: 391 Time Remaining:  0 (Last Run Time:  7) Name: cksum
+|       PID: 498 Time Remaining:  6 (Last Run Time:  7) Name: less
+|       PID: 572 Time Remaining:  5 (Last Run Time:  6) Name: whoami
+|       PID: 627 Time Remaining:  8 (Last Run Time:  8) Name: uniq
+|       PID: 802 Time Remaining:  6 (Last Run Time:  9) Name: nano
+############# starvation : 93 ##############+------------
+| Selecting to Run on the CPU
+|       PID:  93 Time Remaining:  9 (Last Run Time:  4) Name: emacs
+\=============
+
+./ scheduler 3:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 985 Time Remaining:  0 (Last Run Time:  1) Name: sort
++------------
+| In Scheduler:  1 Processes
+|       PID: 985 Time Remaining:  0 (Last Run Time:  1) Name: sort
++------------
+| Selecting to Run on the CPU
+|       PID: 985 Time Remaining:  0 (Last Run Time:  1) Name: sort
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Terminating Process
+|       PID: 985 Time Remaining: -1 (Last Run Time:  1) Name: sort
+| Process Starting
+|       PID: 940 Time Remaining:  6 (Last Run Time:  2) Name: grep
++------------
+| In Scheduler:  1 Processes
+|       PID: 940 Time Remaining:  6 (Last Run Time:  2) Name: grep
++------------
+| Selecting to Run on the CPU
+|       PID: 940 Time Remaining:  6 (Last Run Time:  2) Name: grep
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+| Process Starting
+|       PID: 264 Time Remaining:  4 (Last Run Time:  3) Name: cat
++------------
+| In Scheduler:  2 Processes
+|       PID: 264 Time Remaining:  4 (Last Run Time:  3) Name: cat
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  4 (Last Run Time:  3) Name: cat
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+| Process Starting
+|       PID: 739 Time Remaining:  1 (Last Run Time:  4) Name: cp
++------------
+| In Scheduler:  3 Processes
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+|       PID: 739 Time Remaining:  1 (Last Run Time:  4) Name: cp
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
++------------
+| Selecting to Run on the CPU
+|       PID: 739 Time Remaining:  1 (Last Run Time:  4) Name: cp
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 739 Time Remaining:  0 (Last Run Time:  4) Name: cp
+| Process Starting
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| In Scheduler:  3 Processes
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  3 (Last Run Time:  3) Name: cat
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 264 Time Remaining:  2 (Last Run Time:  5) Name: cat
+| Process Starting
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
++------------
+| In Scheduler:  4 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 264 Time Remaining:  2 (Last Run Time:  5) Name: cat
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  2 (Last Run Time:  5) Name: cat
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+| Process Starting
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
++------------
+| In Scheduler:  5 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
+############# starvation : 940 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 940 Time Remaining:  5 (Last Run Time:  2) Name: grep
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 940 Time Remaining:  4 (Last Run Time:  7) Name: grep
+| Process Starting
+|       PID: 798 Time Remaining:  4 (Last Run Time:  8) Name: mkdir
++------------
+| In Scheduler:  6 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
+|       PID: 798 Time Remaining:  4 (Last Run Time:  8) Name: mkdir
+|       PID: 940 Time Remaining:  4 (Last Run Time:  7) Name: grep
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 264 Time Remaining:  1 (Last Run Time:  6) Name: cat
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 264 Time Remaining:  0 (Last Run Time:  8) Name: cat
+| Process Starting
+|       PID: 974 Time Remaining:  1 (Last Run Time:  9) Name: wc
++------------
+| In Scheduler:  6 Processes
+|       PID: 142 Time Remaining:  8 (Last Run Time:  6) Name: touch
+|       PID: 647 Time Remaining:  7 (Last Run Time:  7) Name: cksum
+|       PID: 798 Time Remaining:  4 (Last Run Time:  8) Name: mkdir
+|       PID: 940 Time Remaining:  4 (Last Run Time:  7) Name: grep
+|       PID: 974 Time Remaining:  1 (Last Run Time:  9) Name: wc
+|       PID: 975 Time Remaining:  5 (Last Run Time:  5) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID: 974 Time Remaining:  1 (Last Run Time:  9) Name: wc
+\=============
+
+./ scheduler 4:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID:  83 Time Remaining:  6 (Last Run Time:  1) Name: man
++------------
+| In Scheduler:  1 Processes
+|       PID:  83 Time Remaining:  6 (Last Run Time:  1) Name: man
++------------
+| Selecting to Run on the CPU
+|       PID:  83 Time Remaining:  6 (Last Run Time:  1) Name: man
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+| Process Starting
+|       PID: 537 Time Remaining:  3 (Last Run Time:  2) Name: mv
++------------
+| In Scheduler:  2 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 537 Time Remaining:  3 (Last Run Time:  2) Name: mv
++------------
+| Selecting to Run on the CPU
+|       PID: 537 Time Remaining:  3 (Last Run Time:  2) Name: mv
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 537 Time Remaining:  2 (Last Run Time:  2) Name: mv
+| Process Starting
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
++------------
+| In Scheduler:  3 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+|       PID: 537 Time Remaining:  2 (Last Run Time:  2) Name: mv
++------------
+| Selecting to Run on the CPU
+|       PID: 537 Time Remaining:  2 (Last Run Time:  2) Name: mv
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 537 Time Remaining:  1 (Last Run Time:  3) Name: mv
+| Process Starting
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| In Scheduler:  4 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+|       PID: 537 Time Remaining:  1 (Last Run Time:  3) Name: mv
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 537 Time Remaining:  1 (Last Run Time:  3) Name: mv
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 537 Time Remaining:  0 (Last Run Time:  4) Name: mv
+| Process Starting
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
++------------
+| In Scheduler:  4 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 385 Time Remaining:  4 (Last Run Time:  3) Name: whoami
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+| Process Starting
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
++------------
+| In Scheduler:  5 Processes
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
+############# head starvation : 83 ##############+------------
+| Selecting to Run on the CPU
+|       PID:  83 Time Remaining:  5 (Last Run Time:  1) Name: man
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+| Process Starting
+|       PID: 718 Time Remaining:  2 (Last Run Time:  7) Name: grep
++------------
+| In Scheduler:  6 Processes
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 718 Time Remaining:  2 (Last Run Time:  7) Name: grep
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 718 Time Remaining:  2 (Last Run Time:  7) Name: grep
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 718 Time Remaining:  1 (Last Run Time:  7) Name: grep
+| Process Starting
+|       PID: 820 Time Remaining:  3 (Last Run Time:  8) Name: dd
++------------
+| In Scheduler:  7 Processes
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 718 Time Remaining:  1 (Last Run Time:  7) Name: grep
+|       PID: 820 Time Remaining:  3 (Last Run Time:  8) Name: dd
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID: 718 Time Remaining:  1 (Last Run Time:  7) Name: grep
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 718 Time Remaining:  0 (Last Run Time:  8) Name: grep
+| Process Starting
+|       PID: 256 Time Remaining:  9 (Last Run Time:  9) Name: man
++------------
+| In Scheduler:  7 Processes
+|       PID:  83 Time Remaining:  4 (Last Run Time:  6) Name: man
+|       PID: 256 Time Remaining:  9 (Last Run Time:  9) Name: man
+|       PID: 385 Time Remaining:  3 (Last Run Time:  5) Name: whoami
+|       PID: 604 Time Remaining:  9 (Last Run Time:  6) Name: sort
+|       PID: 820 Time Remaining:  3 (Last Run Time:  8) Name: dd
+|       PID: 941 Time Remaining:  9 (Last Run Time:  5) Name: cd
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
+############# starvation : 964 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 964 Time Remaining:  4 (Last Run Time:  4) Name: ls
+\=============
+
+./ scheduler 5:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 765 Time Remaining:  2 (Last Run Time:  1) Name: cksum
++------------
+| In Scheduler:  1 Processes
+|       PID: 765 Time Remaining:  2 (Last Run Time:  1) Name: cksum
++------------
+| Selecting to Run on the CPU
+|       PID: 765 Time Remaining:  2 (Last Run Time:  1) Name: cksum
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 765 Time Remaining:  1 (Last Run Time:  1) Name: cksum
+| Process Starting
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| In Scheduler:  2 Processes
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
+|       PID: 765 Time Remaining:  1 (Last Run Time:  1) Name: cksum
++------------
+| Selecting to Run on the CPU
+|       PID: 765 Time Remaining:  1 (Last Run Time:  1) Name: cksum
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Terminating Process
+|       PID: 765 Time Remaining:  0 (Last Run Time:  2) Name: cksum
+| Process Starting
+|       PID: 381 Time Remaining:  8 (Last Run Time:  3) Name: cd
++------------
+| In Scheduler:  2 Processes
+|       PID: 381 Time Remaining:  8 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 381 Time Remaining:  8 (Last Run Time:  3) Name: cd
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+| Process Starting
+|       PID: 198 Time Remaining:  0 (Last Run Time:  4) Name: cksum
++------------
+| In Scheduler:  3 Processes
+|       PID: 198 Time Remaining:  0 (Last Run Time:  4) Name: cksum
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 198 Time Remaining:  0 (Last Run Time:  4) Name: cksum
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 198 Time Remaining: -1 (Last Run Time:  4) Name: cksum
+| Process Starting
+|       PID: 226 Time Remaining:  6 (Last Run Time:  5) Name: ls
++------------
+| In Scheduler:  3 Processes
+|       PID: 226 Time Remaining:  6 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 226 Time Remaining:  6 (Last Run Time:  5) Name: ls
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+| Process Starting
+|       PID:   5 Time Remaining:  3 (Last Run Time:  6) Name: mkdir
++------------
+| In Scheduler:  4 Processes
+|       PID:   5 Time Remaining:  3 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID:   5 Time Remaining:  3 (Last Run Time:  6) Name: mkdir
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+| Process Starting
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
++------------
+| In Scheduler:  5 Processes
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
+############# starvation : 632 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 632 Time Remaining:  9 (Last Run Time:  2) Name: yes
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 632 Time Remaining:  8 (Last Run Time:  7) Name: yes
+| Process Starting
+|       PID: 967 Time Remaining:  7 (Last Run Time:  8) Name: tee
++------------
+| In Scheduler:  6 Processes
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
+|       PID: 632 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID: 967 Time Remaining:  7 (Last Run Time:  8) Name: tee
+############# starvation : 381 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 381 Time Remaining:  7 (Last Run Time:  3) Name: cd
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Unloading Process
+|       PID: 381 Time Remaining:  6 (Last Run Time:  8) Name: cd
+| Process Starting
+|       PID: 308 Time Remaining:  1 (Last Run Time:  9) Name: man
++------------
+| In Scheduler:  7 Processes
+|       PID:   5 Time Remaining:  2 (Last Run Time:  6) Name: mkdir
+|       PID: 226 Time Remaining:  5 (Last Run Time:  5) Name: ls
+|       PID: 308 Time Remaining:  1 (Last Run Time:  9) Name: man
+|       PID: 381 Time Remaining:  6 (Last Run Time:  8) Name: cd
+|       PID: 460 Time Remaining:  3 (Last Run Time:  7) Name: cat
+|       PID: 632 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID: 967 Time Remaining:  7 (Last Run Time:  8) Name: tee
++------------
+| Selecting to Run on the CPU
+|       PID: 308 Time Remaining:  1 (Last Run Time:  9) Name: man
+\=============
+
+./ scheduler 6:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 985 Time Remaining:  5 (Last Run Time:  1) Name: emacs
++------------
+| In Scheduler:  1 Processes
+|       PID: 985 Time Remaining:  5 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 985 Time Remaining:  5 (Last Run Time:  1) Name: emacs
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
+| Process Starting
+|       PID: 285 Time Remaining:  3 (Last Run Time:  2) Name: nano
++------------
+| In Scheduler:  2 Processes
+|       PID: 285 Time Remaining:  3 (Last Run Time:  2) Name: nano
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 285 Time Remaining:  3 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 285 Time Remaining:  2 (Last Run Time:  2) Name: nano
+| Process Starting
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
++------------
+| In Scheduler:  3 Processes
+|       PID: 285 Time Remaining:  2 (Last Run Time:  2) Name: nano
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 285 Time Remaining:  2 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Unloading Process
+|       PID: 285 Time Remaining:  1 (Last Run Time:  3) Name: nano
+| Process Starting
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
++------------
+| In Scheduler:  4 Processes
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 285 Time Remaining:  1 (Last Run Time:  3) Name: nano
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 285 Time Remaining:  1 (Last Run Time:  3) Name: nano
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 285 Time Remaining:  0 (Last Run Time:  4) Name: nano
+| Process Starting
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
++------------
+| In Scheduler:  4 Processes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 778 Time Remaining:  3 (Last Run Time:  3) Name: cksum
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+| Process Starting
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
++------------
+| In Scheduler:  5 Processes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
+############# starvation : 985 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 985 Time Remaining:  4 (Last Run Time:  1) Name: emacs
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
+| Process Starting
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
++------------
+| In Scheduler:  6 Processes
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 270 Time Remaining:  2 (Last Run Time:  6) Name: more
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 270 Time Remaining:  1 (Last Run Time:  7) Name: more
+| Process Starting
+|       PID: 575 Time Remaining:  0 (Last Run Time:  8) Name: dd
++------------
+| In Scheduler:  7 Processes
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  1 (Last Run Time:  7) Name: more
+|       PID: 575 Time Remaining:  0 (Last Run Time:  8) Name: dd
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
++------------
+| Selecting to Run on the CPU
+|       PID: 575 Time Remaining:  0 (Last Run Time:  8) Name: dd
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 575 Time Remaining: -1 (Last Run Time:  8) Name: dd
+| Process Starting
+|       PID: 919 Time Remaining:  1 (Last Run Time:  9) Name: echo
++------------
+| In Scheduler:  7 Processes
+|       PID:  11 Time Remaining:  8 (Last Run Time:  7) Name: yes
+|       PID:  92 Time Remaining:  4 (Last Run Time:  5) Name: stat
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+|       PID: 270 Time Remaining:  1 (Last Run Time:  7) Name: more
+|       PID: 778 Time Remaining:  2 (Last Run Time:  5) Name: cksum
+|       PID: 919 Time Remaining:  1 (Last Run Time:  9) Name: echo
+|       PID: 985 Time Remaining:  3 (Last Run Time:  6) Name: emacs
+############# starvation : 93 ##############+------------
+| Selecting to Run on the CPU
+|       PID:  93 Time Remaining:  6 (Last Run Time:  4) Name: uniq
+\=============
+
+./ scheduler 7:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 299 Time Remaining:  1 (Last Run Time:  1) Name: man
++------------
+| In Scheduler:  1 Processes
+|       PID: 299 Time Remaining:  1 (Last Run Time:  1) Name: man
++------------
+| Selecting to Run on the CPU
+|       PID: 299 Time Remaining:  1 (Last Run Time:  1) Name: man
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Terminating Process
+|       PID: 299 Time Remaining:  0 (Last Run Time:  1) Name: man
+| Process Starting
+|       PID: 443 Time Remaining:  7 (Last Run Time:  2) Name: nano
++------------
+| In Scheduler:  1 Processes
+|       PID: 443 Time Remaining:  7 (Last Run Time:  2) Name: nano
++------------
+| Selecting to Run on the CPU
+|       PID: 443 Time Remaining:  7 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Unloading Process
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+| Process Starting
+|       PID: 153 Time Remaining:  1 (Last Run Time:  3) Name: more
++------------
+| In Scheduler:  2 Processes
+|       PID: 153 Time Remaining:  1 (Last Run Time:  3) Name: more
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
++------------
+| Selecting to Run on the CPU
+|       PID: 153 Time Remaining:  1 (Last Run Time:  3) Name: more
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Terminating Process
+|       PID: 153 Time Remaining:  0 (Last Run Time:  3) Name: more
+| Process Starting
+|       PID: 526 Time Remaining:  0 (Last Run Time:  4) Name: more
++------------
+| In Scheduler:  2 Processes
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+|       PID: 526 Time Remaining:  0 (Last Run Time:  4) Name: more
++------------
+| Selecting to Run on the CPU
+|       PID: 526 Time Remaining:  0 (Last Run Time:  4) Name: more
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Terminating Process
+|       PID: 526 Time Remaining: -1 (Last Run Time:  4) Name: more
+| Process Starting
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
++------------
+| In Scheduler:  2 Processes
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
++------------
+| Selecting to Run on the CPU
+|       PID: 443 Time Remaining:  6 (Last Run Time:  2) Name: nano
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+| Process Starting
+|       PID: 963 Time Remaining:  4 (Last Run Time:  6) Name: touch
++------------
+| In Scheduler:  3 Processes
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 963 Time Remaining:  4 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 963 Time Remaining:  4 (Last Run Time:  6) Name: touch
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
+| Process Starting
+|       PID: 884 Time Remaining:  2 (Last Run Time:  7) Name: nano
++------------
+| In Scheduler:  4 Processes
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 884 Time Remaining:  2 (Last Run Time:  7) Name: nano
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 884 Time Remaining:  2 (Last Run Time:  7) Name: nano
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID: 884 Time Remaining:  1 (Last Run Time:  7) Name: nano
+| Process Starting
+|       PID: 230 Time Remaining:  4 (Last Run Time:  8) Name: touch
++------------
+| In Scheduler:  5 Processes
+|       PID: 230 Time Remaining:  4 (Last Run Time:  8) Name: touch
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 884 Time Remaining:  1 (Last Run Time:  7) Name: nano
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 884 Time Remaining:  1 (Last Run Time:  7) Name: nano
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID: 884 Time Remaining:  0 (Last Run Time:  8) Name: nano
+| Process Starting
+|       PID: 112 Time Remaining:  5 (Last Run Time:  9) Name: wc
++------------
+| In Scheduler:  5 Processes
+|       PID: 112 Time Remaining:  5 (Last Run Time:  9) Name: wc
+|       PID: 230 Time Remaining:  4 (Last Run Time:  8) Name: touch
+|       PID: 443 Time Remaining:  5 (Last Run Time:  5) Name: nano
+|       PID: 746 Time Remaining:  6 (Last Run Time:  5) Name: yes
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
++------------
+| Selecting to Run on the CPU
+|       PID: 963 Time Remaining:  3 (Last Run Time:  6) Name: touch
+\=============
+
+./ scheduler 8:
+
+.=============
+| Starting Time:  1
++------------
+| Process Starting
+|       PID: 744 Time Remaining:  9 (Last Run Time:  1) Name: uniq
++------------
+| In Scheduler:  1 Processes
+|       PID: 744 Time Remaining:  9 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 744 Time Remaining:  9 (Last Run Time:  1) Name: uniq
+\=============
+
+.=============
+| Starting Time:  2
++------------
+| Unloading Process
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
+| Process Starting
+|       PID:  93 Time Remaining:  1 (Last Run Time:  2) Name: rm
++------------
+| In Scheduler:  2 Processes
+|       PID:  93 Time Remaining:  1 (Last Run Time:  2) Name: rm
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  93 Time Remaining:  1 (Last Run Time:  2) Name: rm
+\=============
+
+.=============
+| Starting Time:  3
++------------
+| Terminating Process
+|       PID:  93 Time Remaining:  0 (Last Run Time:  2) Name: rm
+| Process Starting
+|       PID: 313 Time Remaining:  1 (Last Run Time:  3) Name: grep
++------------
+| In Scheduler:  2 Processes
+|       PID: 313 Time Remaining:  1 (Last Run Time:  3) Name: grep
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID: 313 Time Remaining:  1 (Last Run Time:  3) Name: grep
+\=============
+
+.=============
+| Starting Time:  4
++------------
+| Terminating Process
+|       PID: 313 Time Remaining:  0 (Last Run Time:  3) Name: grep
+| Process Starting
+|       PID:  47 Time Remaining:  4 (Last Run Time:  4) Name: dd
++------------
+| In Scheduler:  2 Processes
+|       PID:  47 Time Remaining:  4 (Last Run Time:  4) Name: dd
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  47 Time Remaining:  4 (Last Run Time:  4) Name: dd
+\=============
+
+.=============
+| Starting Time:  5
++------------
+| Unloading Process
+|       PID:  47 Time Remaining:  3 (Last Run Time:  4) Name: dd
+| Process Starting
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
++------------
+| In Scheduler:  3 Processes
+|       PID:  47 Time Remaining:  3 (Last Run Time:  4) Name: dd
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  47 Time Remaining:  3 (Last Run Time:  4) Name: dd
+\=============
+
+.=============
+| Starting Time:  6
++------------
+| Unloading Process
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+| Process Starting
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
++------------
+| In Scheduler:  4 Processes
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
+############# starvation : 744 ##############+------------
+| Selecting to Run on the CPU
+|       PID: 744 Time Remaining:  8 (Last Run Time:  1) Name: uniq
+\=============
+
+.=============
+| Starting Time:  7
++------------
+| Unloading Process
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
+| Process Starting
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
++------------
+| In Scheduler:  5 Processes
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
++------------
+| Selecting to Run on the CPU
+|       PID:  38 Time Remaining:  2 (Last Run Time:  6) Name: grep
+\=============
+
+.=============
+| Starting Time:  8
++------------
+| Unloading Process
+|       PID:  38 Time Remaining:  1 (Last Run Time:  7) Name: grep
+| Process Starting
+|       PID: 883 Time Remaining:  2 (Last Run Time:  8) Name: ls
++------------
+| In Scheduler:  6 Processes
+|       PID:  38 Time Remaining:  1 (Last Run Time:  7) Name: grep
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
+|       PID: 883 Time Remaining:  2 (Last Run Time:  8) Name: ls
++------------
+| Selecting to Run on the CPU
+|       PID:  38 Time Remaining:  1 (Last Run Time:  7) Name: grep
+\=============
+
+.=============
+| Starting Time:  9
++------------
+| Terminating Process
+|       PID:  38 Time Remaining:  0 (Last Run Time:  8) Name: grep
+| Process Starting
+|       PID: 947 Time Remaining:  3 (Last Run Time:  9) Name: cd
++------------
+| In Scheduler:  6 Processes
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+|       PID: 247 Time Remaining:  7 (Last Run Time:  7) Name: vim
+|       PID: 398 Time Remaining:  7 (Last Run Time:  5) Name: more
+|       PID: 744 Time Remaining:  7 (Last Run Time:  6) Name: uniq
+|       PID: 883 Time Remaining:  2 (Last Run Time:  8) Name: ls
+|       PID: 947 Time Remaining:  3 (Last Run Time:  9) Name: cd
++------------
+| Selecting to Run on the CPU
+|       PID:  47 Time Remaining:  2 (Last Run Time:  5) Name: dd
+\=============
